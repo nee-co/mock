@@ -1,0 +1,108 @@
+<html><head>
+    <meta name="keywords" content="form">
+    <meta name="description" content="form">
+    <title>form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section section-warning">
+      <div class="row">
+        <div class="col-md-2 h3">Nee-coロゴ</div>
+        <div class="col-md-offset-8 col-md-2">
+          <div class="btn-group">
+            <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+              G013C1124
+              <i class="fa fa-3x fa-fw fa-smile-o"></i><span class="fa fa-caret-down">
+              </span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">プロフィール編集</a>
+              </li>
+              <li>
+                <a href="#">ログアウト</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form role="form">
+              <div class="form-group">
+                <h4>タイトル</h4>
+                <input class="form-control" id="exampleInputTitle" placeholder="title" type="text">
+              </div>
+              <div class="form-group">
+                <hr>
+                <h4>タグ</h4>
+                <label>
+                  <input type="checkbox" name="tags" value="1">Ruby</label>
+                <label>
+                  <input type="checkbox" name="tags" value="2">Ruby on Rails</label>
+                <label>
+                  <input type="checkbox" name="tags" value="3">もくもく会</label>
+              </div>
+              <div class="form-gropu">
+                <hr>
+                <h4>イベント画像</h4>
+                <input type="file">
+              </div>
+              <div class="form-group">
+                <br>
+                <hr>
+                <h4>基本情報</h4>
+                <table>
+                  <tr>
+                    <td>
+                      <label class="control-label" for="exampleInputStartDate">開始時刻</label>
+                    </td>
+                    <td>
+                      <input type="date" class="form-control" id="exampleInputStartDate">
+                    </td>
+                    <td>
+                      <label class="control-label" for="exampleInputEndDate">終了時刻</label>
+                    </td>
+                    <td>
+                      <input type="date" class="form-control" id="exampleInputEndDate">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="control-label" for="exampleInputPlace">場所</label>
+                    </td>
+                    <td>
+                      <input class="form-control" id="exampleInputPlace">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="exampleInputContent">イベント内容</label>
+                <textarea class="form-control" id="exampleInputContent" rows="20"></textarea>
+              </div>
+              <button type="reset" class="btn btn-warning">キャンセル</button>
+              <button type="submit" class="btn btn-warning">非公開</button>
+              <button type="submit" class="btn btn-warning">公開</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="section section-warning">
+        <div class="row">
+          <div class="col-md-2 h3">Nee-coロゴ</div>
+          <div class="col-md-10">
+            <p>フッターです。</p>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+</html>
