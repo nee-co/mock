@@ -60,17 +60,29 @@
                 <h4>基本情報</h4>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan=2>
                       <label class="control-label" for="exampleInputStartDate">開始時刻</label>
                     </td>
                     <td>
                       <input type="date" class="form-control" id="exampleInputStartDate">
                     </td>
+                  </tr>
+                  <tr>
                     <td>
-                      <label class="control-label" for="exampleInputEndDate">終了時刻</label>
+                      <input type="time" class="form-control" id="exampleInputStartDate">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan=2>
+                      <label class="control-label" for="exampleInputStartDate">終了時刻</label>
                     </td>
                     <td>
-                      <input type="date" class="form-control" id="exampleInputEndDate">
+                      <input type="date" class="form-control" id="exampleInputStartDate">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="time" class="form-control" id="exampleInputStartDate">
                     </td>
                   </tr>
                   <tr>
@@ -87,9 +99,7 @@
                 <label class="control-label" for="exampleInputContent">イベント内容</label>
                 <textarea class="form-control" id="exampleInputContent" rows="20"></textarea>
               </div>
-              <button type="reset" class="btn btn-warning">キャンセル</button>
-              <button type="submit" class="btn btn-warning">非公開</button>
-              <button type="submit" class="btn btn-warning">公開</button>
+              <button type="submit" class="btn btn-warning">保存</button>
             </form>
           </div>
         </div>
