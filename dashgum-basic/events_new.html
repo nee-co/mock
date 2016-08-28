@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Nee-co</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/chart-master/Chart.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="index.html" class="logo"><b>NEE-CO</b></a>
+        <!--logo end-->
+        <div class="nav notify-row" id="top_menu">
+          <!--  notification start -->
+          <ul class="nav top-menu">
+            <!-- inbox dropdown start-->
+            <li id="header_inbox_bar" class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge bg-theme">2</span>
+              </a>
+              <ul class="dropdown-menu extended inbox">
+                <div class="notify-arrow notify-arrow-green"></div>
+                <li>
+                  <p class="green">2通のお知らせが来てます</p>
+                </li>
+                <li>
+                  <a href="index.html#">
+                    <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+                    <span class="subject">
+                      <span class="from">[Rubyもくもく会#1]</span>
+                      <span class="time">ちょうど今</span>
+                    </span>
+                    <span class="message">
+                      開催日が更新されました
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#">
+                    <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+                    <span class="subject">
+                      <span class="from">ITカレッジ</span>
+                      <span class="time">5分前</span>
+                    </span>
+                    <span class="message">
+                     本日は台風のため休講です。
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#">すべての通知を見る</a>
+                </li>
+              </ul>
+            </li>
+            <!-- inbox dropdown end -->
+          </ul>
+          <!--  notification end -->
+        </div>
+        <div class="top-menu">
+          <ul class="nav pull-right top-menu">
+            <li><a class="logout" href="login.html">ログアウト</a></li>
+          </ul>
+        </div>
+      </header>
+      <!--header end-->
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+        <div id="sidebar"  class="nav-collapse ">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu" id="nav-accordion">
+
+            <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+            <h5 class="centered">G013C1124</h5>
+
+            <li class="mt">
+              <a href="index.html">
+                <i class="fa fa-dashboard"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="sub-menu">
+              <a class="active" href="javascript:;" >
+                <i class="fa fa-calendar"></i>
+                <span>イベント</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="events_index.html">探す</a></li>
+                <li class="active"><a  href="events_new.html">開催する</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:;" >
+                <i class="fa fa-tasks"></i>
+                <span>お仕事</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="login.html">探す</a></li>
+                <li><a  href="lock_screen.html">依頼する</a></li>
+                <li><a  href="lock_screen.html">募集する</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="file_index.html">
+                <i class="fa fa-archive"></i>
+                <span>ファイル</span>
+              </a>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:;" >
+                <i class="fa fa-file"></i>
+                <span>Wiki</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="login.html">見る</a></li>
+                <li><a  href="lock_screen.html">作る</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:;" >
+                <i class="fa fa-question"></i>
+                <span>アンケート</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="login.html">答える</a></li>
+                <li><a  href="lock_screen.html">聞く</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:;" >
+                <i class="fa fa-link"></i>
+                <span>外部リンク</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="https://bitbucket.org/nhac/"><i class="fa fa-bitbucket"></i>Bitbucket</a></li>
+                <li><a  href="http://www.neec.ac.jp/"><i class="fa fa-graduation-cap"></i>日本工学院HP</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:;" >
+                <i class="fa fa-envelope"></i>
+                <span>お問い合わせ</span>
+              </a>
+              <ul class="sub">
+                <li><a  href="login.html">よくある質問</a></li>
+                <li><a  href="lock_screen.html">直接聞く</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- sidebar menu end-->
+        </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+        <section class="wrapper">
+          <h3>イベント新規作成</h3>
+
+          <div class="form-panel">
+            <form class="form-horizontal style-form" method="post">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">タイトル<span class="label label-danger label-mini">必須</span></label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="例) Rubyもくもく会#1">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">イベント画像</label>
+                <div class="col-sm-10">
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">タグ</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="例) Ruby, Ruby on Rails">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">開催日時</label>
+                <div class="col-sm-10">
+                  <div class="col-sm-6">
+                    <div class="col-sm-7">
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control">
+                        <option value="00:00:00">00:00</option>
+                        <option value="00:30:00">00:30</option>
+                        <option value="01:00:00">01:00</option>
+                        <option value="01:30:00">01:30</option>
+                        <option value="02:00:00">02:00</option>
+                        <option value="02:30:00">02:30</option>
+                        <option value="03:00:00">03:00</option>
+                        <option value="03:30:00">03:30</option>
+                        <option value="04:00:00">04:00</option>
+                        <option value="04:30:00">04:30</option>
+                        <option value="05:00:00">05:00</option>
+                        <option value="05:30:00">05:30</option>
+                        <option value="06:00:00">06:00</option>
+                        <option value="06:30:00">06:30</option>
+                        <option value="07:00:00">07:00</option>
+                        <option value="07:30:00">07:30</option>
+                        <option value="08:00:00">08:00</option>
+                        <option value="08:30:00">08:30</option>
+                        <option value="09:00:00">09:00</option>
+                        <option value="09:30:00">09:30</option>
+                        <option value="10:00:00">10:00</option>
+                        <option value="10:30:00">10:30</option>
+                        <option value="11:00:00">11:00</option>
+                        <option value="11:30:00">11:30</option>
+                        <option value="12:00:00">12:00</option>
+                        <option value="12:30:00">12:30</option>
+                        <option value="13:00:00">13:00</option>
+                        <option value="13:30:00">13:30</option>
+                        <option value="14:00:00">14:00</option>
+                        <option value="14:30:00">14:30</option>
+                        <option value="15:00:00">15:00</option>
+                        <option value="15:30:00">15:30</option>
+                        <option value="16:00:00">16:00</option>
+                        <option value="16:30:00">16:30</option>
+                        <option value="17:00:00">17:00</option>
+                        <option value="17:30:00">17:30</option>
+                        <option value="18:00:00">18:00</option>
+                        <option value="18:30:00">18:30</option>
+                        <option value="19:00:00">19:00</option>
+                        <option value="19:30:00">19:30</option>
+                        <option value="20:00:00">20:00</option>
+                        <option value="20:30:00">20:30</option>
+                        <option value="21:00:00">21:00</option>
+                        <option value="21:30:00">21:30</option>
+                        <option value="22:00:00">22:00</option>
+                        <option value="22:30:00">22:30</option>
+                        <option value="23:00:00">23:00</option>
+                        <option value="23:30:00">23:30</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                    から
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="col-sm-7">
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control">
+                        <option value="00:00:00">00:00</option>
+                        <option value="00:30:00">00:30</option>
+                        <option value="01:00:00">01:00</option>
+                        <option value="01:30:00">01:30</option>
+                        <option value="02:00:00">02:00</option>
+                        <option value="02:30:00">02:30</option>
+                        <option value="03:00:00">03:00</option>
+                        <option value="03:30:00">03:30</option>
+                        <option value="04:00:00">04:00</option>
+                        <option value="04:30:00">04:30</option>
+                        <option value="05:00:00">05:00</option>
+                        <option value="05:30:00">05:30</option>
+                        <option value="06:00:00">06:00</option>
+                        <option value="06:30:00">06:30</option>
+                        <option value="07:00:00">07:00</option>
+                        <option value="07:30:00">07:30</option>
+                        <option value="08:00:00">08:00</option>
+                        <option value="08:30:00">08:30</option>
+                        <option value="09:00:00">09:00</option>
+                        <option value="09:30:00">09:30</option>
+                        <option value="10:00:00">10:00</option>
+                        <option value="10:30:00">10:30</option>
+                        <option value="11:00:00">11:00</option>
+                        <option value="11:30:00">11:30</option>
+                        <option value="12:00:00">12:00</option>
+                        <option value="12:30:00">12:30</option>
+                        <option value="13:00:00">13:00</option>
+                        <option value="13:30:00">13:30</option>
+                        <option value="14:00:00">14:00</option>
+                        <option value="14:30:00">14:30</option>
+                        <option value="15:00:00">15:00</option>
+                        <option value="15:30:00">15:30</option>
+                        <option value="16:00:00">16:00</option>
+                        <option value="16:30:00">16:30</option>
+                        <option value="17:00:00">17:00</option>
+                        <option value="17:30:00">17:30</option>
+                        <option value="18:00:00">18:00</option>
+                        <option value="18:30:00">18:30</option>
+                        <option value="19:00:00">19:00</option>
+                        <option value="19:30:00">19:30</option>
+                        <option value="20:00:00">20:00</option>
+                        <option value="20:30:00">20:30</option>
+                        <option value="21:00:00">21:00</option>
+                        <option value="21:30:00">21:30</option>
+                        <option value="22:00:00">22:00</option>
+                        <option value="22:30:00">22:30</option>
+                        <option value="23:00:00">23:00</option>
+                        <option value="23:30:00">23:30</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                    まで
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 col-sm-2 control-label">場所</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="例) 研B-501">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 col-sm-2 control-label">イベント内容</label>
+                <div class="col-sm-10">
+                  <textarea type="text" class="form-control" rows="10" placeholder="例) Ruby初心者歓迎!!"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">作成</button>
+            </form>
+          </div>
+        </section>
+      </section>
+      <!--main content end-->
+
+      <!--footer start-->
+      <footer class="site-footer">
+        <div class="text-center">
+          Nee-co
+          <a href="events_new.html#" class="go-top">
+            <i class="fa fa-angle-up"></i>
+          </a>
+        </div>
+      </footer>
+      <!--footer end-->
+    </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/sparkline-chart.js"></script>
+    <script src="assets/js/zabuto_calendar.js"></script>
+
+    <script type="application/javascript">
+      $(document).ready(function () {
+        $("#date-popover").popover({html: true, trigger: "manual"});
+        $("#date-popover").hide();
+        $("#date-popover").click(function (e) {
+          $(this).hide();
+        });
+
+        $("#my-calendar").zabuto_calendar({
+          action: function () {
+            return myDateFunction(this.id, false);
+          },
+          action_nav: function () {
+            return myNavFunction(this.id);
+          },
+          ajax: {
+            url: "show_data.php?action=1",
+            modal: true
+          },
+          legend: [
+            {type: "text", label: "Special event", badge: "00"},
+            {type: "block", label: "Regular event", }
+          ]
+        });
+      });
+
+
+      function myNavFunction(id) {
+        $("#date-popover").hide();
+        var nav = $("#" + id).data("navigation");
+        var to = $("#" + id).data("to");
+        console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+      }
+    </script>
+  </body>
+</html>
