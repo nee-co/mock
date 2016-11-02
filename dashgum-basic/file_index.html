@@ -202,20 +202,183 @@
       <!--main content start-->
       <section id="main-content">
         <section class="wrapper">
-          <!-- 公開対象がカレッジの場合はラベルをつける -->
           <h3>
-            TOP
+            <a href="#">TOP</a>
             <i class="fa fa-angle-right"></i>
-            IT/テクノロジー カレッジ専用
-            <label class="label label-warning">IT</label>
-            <label class="label label-success">テクノロジー</label>
+            <a href="#">IT_テクノロジー カレッジ専用</a>
           </h3>
 
-          <!-- 公開対象がユーザの場合はユーザアイコンを並べる(表示上限設ける) -->
-          <img src="assets/img/ui-danro.jpg" width="40" height="40">
-          <img src="assets/img/ui-divya.jpg" width="40" height="40">
-          <img src="assets/img/ui-sam.jpg" width="40" height="40">
-          <img src="assets/img/ui-sherman.jpg" width="40" height="40">
+          <div class="row">
+            <span class="pull-left">
+              <!-- 公開対象がユーザの場合はユーザアイコンを並べる(表示上限設ける) -->
+              <img class="img-circle" src="assets/img/ui-danro.jpg" width="40" height="40">
+              <img class="img-circle" src="assets/img/ui-divya.jpg" width="40" height="40">
+              <img class="img-circle" src="assets/img/ui-sam.jpg" width="40" height="40">
+              <img class="img-circle" src="assets/img/ui-sherman.jpg" width="40" height="40">
+
+              <!-- 公開対象がカレッジの場合はラベルをつける -->
+              <label class="label label-warning">IT</label>
+              <label class="label label-success">テクノロジー</label>
+            </span>
+
+            <span class="pull-right">
+
+              <button class="btn btn-info" data-toggle="modal" data-target="#uploadFile"><i class="fa fa-file"></i>ファイル追加</button>
+
+              <!-- uoload file modal start -->
+              <div class="modal fade" id="uploadFile" tabindex="-1" role="dialog" aria-labelledby="uploadFileLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="uploadFileLabel">Upload</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-horizontal style-form" method="post">
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">ファイル</label>
+                           <div class="col-sm-10">
+                             <input type="file" class="form-control">
+                           </div>
+                        </div>
+                        <h4 class="mb">公開対象</h4>
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="target_type" id="targetUser" value="user" checked>
+                              ユーザ個別指定
+                            </label>
+                          </div>
+
+                          <input type="text" class="form-control" placeholder="例) 田中 or G099A9999">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="target_type" id="targetCollege" value="college">
+                              カレッジ一括指定
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="a" disabled>クリエイターズ</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="b" disabled>ミュージック</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="c">IT</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="d">テクノロジー</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="e" disabled> 医療・保育</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label> <input type="checkbox" name="public_ids[]" value="f" disabled>スポーツ</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label> <input type="checkbox" name="public_ids[]" value="g" disabled>デザイン</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Upload</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- upload file modal end -->
+
+              <button class="btn btn-info" data-toggle="modal" data-target="#addDir"><i class="fa fa-folder"></i>ディレクトリ追加</button>
+
+              <!-- add directory modal start -->
+              <div class="modal fade" id="addDir" tabindex="-1" role="dialog" aria-labelledby="addDirLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="addDirLabel">Create Directory</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-horizontal style-form" method="post">
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">ディレクトリ名</label>
+                           <div class="col-sm-10">
+                             <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <h4 class="mb">公開対象</h4>
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="target_type" id="targetUser" value="user" checked>
+                              ユーザ個別指定
+                            </label>
+                          </div>
+
+                          <input type="text" class="form-control" placeholder="例) 田中 or G099A9999">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="target_type" id="targetCollege" value="college">
+                              カレッジ一括指定
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="a" disabled>クリエイターズ</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="b" disabled>ミュージック</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="c">IT</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="d">テクノロジー</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="public_ids[]" value="e" disabled> 医療・保育</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label> <input type="checkbox" name="public_ids[]" value="f" disabled>スポーツ</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label> <input type="checkbox" name="public_ids[]" value="g" disabled>デザイン</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Create</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add directory modal end -->
+
+            </span>
+          </div>
 
           <div class="form-panel">
             <table class="table table-striped table-advance table-hover">
@@ -229,37 +392,255 @@
               <tbody>
                 <tr>
                   <td>
-                    <i class="fa fa-folder"></i>IT_テクノロジー共有フォルダ
+                    <i class="fa fa-folder"><a href="#"></i>IT_テクノロジー共有フォルダ</a>
                   </td>
                   <td>
                     <label class="label label-warning">IT</label>
                     <label class="label label-success">テクノロジー</label>
                   </td>
                   <td>
-                    2016/01/02<img src="assets/img/ui-danro.jpg" width="30" height="30">
+                    2016-01-02<img class="img-circle" src="assets/img/ui-danro.jpg" width="30" height="30">
+                  </td>
+                  <td>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#edit-1">公開対象編集</button>
+
+                    <!-- edit modal start -->
+                    <div class="modal fade" id="edit-1" tabindex="-1" role="dialog" aria-labelledby="edit-1Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="edit-1Label">Edit</h4>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-horizontal style-form" method="post">
+                              <h4 class="mb">公開対象</h4>
+                              <div class="form-group">
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="target_type" id="targetUser" value="user">
+                                    ユーザ個別指定
+                                  </label>
+                                </div>
+
+                                <input type="text" class="form-control" placeholder="例) 田中 or G099A9999">
+                              </div>
+
+                              <div class="form-group">
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="target_type" id="targetCollege" value="college" checked>
+                                    カレッジ一括指定
+                                  </label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="a" disabled>クリエイターズ</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="b" disabled>ミュージック</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="c" checked>IT</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="d" checked>テクノロジー</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="e" disabled> 医療・保育</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label> <input type="checkbox" name="public_ids[]" value="f" disabled>スポーツ</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label> <input type="checkbox" name="public_ids[]" value="g" disabled>デザイン</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- edit modal end -->
+
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#delete-1">削除</button>
+
+                    <!-- delete confirm modal start -->
+                    <div class="modal fade" id="delete-1" tabindex="-1" role="dialog" aria-labelledby="delete-1Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="delete-1Label">Delete</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="alert alert-danger"><b>注意!</b>※ このフオルダの配下にある<b>全て</b>の ファイルとフォルダが削除されます!!  </div>
+                            「IT_テクノロジー共有フォルダ」を削除しますか?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- delete confirm modal end -->
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <i class="fa fa-folder"></i>IT課題提出先
+                    <i class="fa fa-folder"></i><a href="#">IT課題提出先</a>
                   </td>
                   <td>
                     <label class="label label-warning">IT</label>
                   </td>
                   <td>
-                    2016/01/02<img src="assets/img/ui-danro.jpg" width="30" height="30">
+                    2016-01-02<img class="img-circle" src="assets/img/ui-danro.jpg" width="30" height="30">
                   </td>
+                  <td></td>
                 </tr>
+
                 <tr>
                   <td>
-                    <i class="fa fa-file-pdf-o"></i>卒業制作極秘資料.pdf
+                    <i class="fa fa-file-pdf-o"></i><a href="#" data-toggle="modal" data-target="#download">卒業制作極秘資料.pdf</a>
+
+                    <!-- download confirm modal start -->
+                    <div class="modal fade" id="download" tabindex="-1" role="dialog" aria-labelledby="downloadLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="downloadLabel">Download</h4>
+                          </div>
+                          <div class="modal-body">
+                            「卒業制作極秘資料.pdf」をダウンロードしますか？
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Download</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- download confirm modal end -->
+
                   </td>
                   <td>
-                    <img src="assets/img/ui-sam.jpg" width="30" height="30">
-                    <img src="assets/img/ui-sherman.jpg" width="30" height="30">
+                    <img class="img-circle" src="assets/img/ui-sam.jpg" width="30" height="30">
+                    <img class="img-circle" src="assets/img/ui-sherman.jpg" width="30" height="30">
                   </td>
                   <td>
-                    2016/01/01<img src="assets/img/ui-sherman.jpg" width="30" height="30">
+                    2016-01-01<img class="img-circle" src="assets/img/ui-sam.jpg" width="30" height="30">
+                  </td>
+                  <td>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#edit-2">公開対象編集</button>
+
+                    <!-- edit modal start -->
+                    <div class="modal fade" id="edit-2" tabindex="-1" role="dialog" aria-labelledby="edit-2Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="edit-2Label">Edit</h4>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-horizontal style-form" method="post">
+                              <h4 class="mb">公開対象</h4>
+                              <div class="form-group">
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="target_type" id="targetUser" value="user" checked>
+                                    ユーザ個別指定
+                                  </label>
+                                </div>
+
+                                <input type="text" class="form-control" placeholder="例) 田中 or G099A9999">
+                                <label>
+                                  <img class="img-circle" src="assets/img/ui-sherman.jpg" width="30" height="30">
+                                    源 義経
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                  <input type="hidden" name="public_ids[]" value="1">
+                                </label>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="target_type" id="targetCollege" value="college">
+                                    カレッジ一括指定
+                                  </label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="a" disabled>クリエイターズ</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="b" disabled>ミュージック</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="c">IT</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="d">テクノロジー</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label><input type="checkbox" name="public_ids[]" value="e" disabled> 医療・保育</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label> <input type="checkbox" name="public_ids[]" value="f" disabled>スポーツ</label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label> <input type="checkbox" name="public_ids[]" value="g" disabled>デザイン</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- edit modal end -->
+
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#delete-2">削除</button>
+
+                    <!-- delete confirm modal start -->
+                    <div class="modal fade" id="delete-2" tabindex="-1" role="dialog" aria-labelledby="delete-2Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="delete-2Label">Delete</h4>
+                          </div>
+                          <div class="modal-body">
+                            「卒業制作極秘資料.pdf」を削除しますか?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- delete confirm modal end -->
                   </td>
                 </tr>
               </tbody>
