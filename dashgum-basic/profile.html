@@ -204,14 +204,26 @@
         <section class="wrapper">
 
           <div class="col-sm-offset-2 col-sm-8">
-            <h3>プロフィール</h3>
+            <h3>プロフィール編集</h3>
             <div class="form-panel">
 
               <!-- イベント検索結果 start -->
               <table class="table table-advance">
                 <tbody>
                   <tr>
-                    <img class="img-circle" src="assets/img/ui-danro.jpg" height="128" width="128">
+                    <div class="col-sm-3">
+                      <span data-toggle="modal" data-target="#uploadImage">
+                        <img class="img-circle" src="assets/img/ui-sam.jpg" height="128" width="128">
+                      </span>
+                    </div>
+                    <div class="col-sm-9">
+                      <blockquote>G099C9999<label class="label label-warning">IT</label></blockquote>
+                      <h2>スティーブ・ゲイツ</h2>
+                      <textarea class="form-control" name="note" value="">パソコンは友達</textarea>
+                      <span class="pull-right">
+                        <button class="btn btn-primary">Update</button>
+                      </span>
+                    </div>
                   </tr>
                 </tbody>
               </table>
@@ -224,6 +236,27 @@
         </section>
       </section>
       <!--main content end-->
+
+      <!-- **********************************************************************************************************************************************************
+      MODAL
+      *********************************************************************************************************************************************************** -->
+
+      <!-- upload image modal start -->
+      <div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="uploadImageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img class="img-circle" src="assets/img/ui-sam.jpg" height="128" width="128">
+              <input type="file">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Upload</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- upload image modal end -->
 
       <!--footer start-->
       <footer class="site-footer">
