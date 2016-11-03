@@ -199,177 +199,289 @@
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!-- main content start -->
       <section id="main-content">
         <section class="wrapper">
           <h3>イベント一覧</h3>
 
-          <div class="form-panel">
-            <form class="form" role="form" method="get">
-              <div class="row">
-                <div class="col-sm-10">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="キーワード">
+          <!-- イベント一覧 start -->
+          <div class="col-sm-8">
+            <div class="form-panel">
+
+              <!-- イベント検索Form start -->
+              <form class="form" role="form" method="get">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="キーワード">
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="submit" class="form-control btn-primary"><i class="fa fa-search"></i>検索</button>
                   </div>
                 </div>
-                <div class="col-sm-2">
-                  <button type="submit" class="form-control btn-primary"><i class="fa fa-search"></i>検索</button>
-                </div>
-              </div>
-            </form>
+              </form>
+              <!-- イベント検索Form end -->
 
-            <table class="table table-striped table-advance table-hover">
-              <tbody>
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-success label-mini">募集中</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+              <!-- イベント検索結果 start -->
+              <table class="table table-striped table-advance table-hover">
+                <tbody>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-01(火) 17:30 ~</div>
+                      <div>2016-11-01(火) 18:30</div>
+                    </td>
+                    <td>10人/20人</td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-danger label-mini">満員</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-02(水) 17:30 ~</div>
+                      <div>2016-11-10(水) 17:30</div>
+                    </td>
+                    <td>
+                      <div>20人/20人</div>
+                      <div><span class="label label-danger label-mini">満員</span></div>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-03(木) ~</div>
+                      <div>2016-11-04(金)</div>
+                    </td>
+                    <td></td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-info label-mini">人気</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-success label-mini">募集中</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-01(火) 17:30 ~</div>
+                      <div>2016-11-01(火) 18:30</div>
+                    </td>
+                    <td>10人/20人</td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-danger label-mini">満員</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-02(水) 17:30 ~</div>
+                      <div>2016-11-10(水) 17:30</div>
+                    </td>
+                    <td>
+                      <div>20人/20人</div>
+                      <div><span class="label label-danger label-mini">満員</span></div>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>2016-11-03(木) ~</div>
+                      <div>2016-11-04(金)</div>
+                    </td>
+                    <td></td>
+                  </tr>
 
-                <tr>
-                  <td class="media">
-                    <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      <span><i class="fa fa-tag"></i>Android</span>
-                      <span><i class="fa fa-tag"></i>Java</span>
-                      <span><i class="fa fa-tag"></i>monaca</span>
-                    </div>
-                  </td>
-                  <td><span class="label label-info label-mini">人気</span></td>
-                  <td>
-                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div><!-- /content-panel -->
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                        <span><i class="fa fa-tag"></i>Android</span>
+                        <span><i class="fa fa-tag"></i>Java</span>
+                        <span><i class="fa fa-tag"></i>monaca</span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- イベント検索結果 end -->
+
+            </div>
+          </div>
+          <!-- main content end -->
+
+          <!-- **********************************************************************************************************************************************************
+          RIGHT SIDEBAR CONTENT
+          *********************************************************************************************************************************************************** -->
+
+          <!-- right sidebar content start -->
+          <div class="col-sm-4">
+
+            <!-- 参加予定イベント start -->
+            <div class="form-panel">
+              <h4 class="mb"><i class="fa fa-angle-right"></i>参加予定イベント</h4>
+
+              <table class="table table-striped table-advance table-hover">
+                <tbody>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-success label-mini">募集中</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-danger label-mini">満員</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-info label-mini">人気</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 参加予定イベント end -->
+
+            <!-- 開催イベント start -->
+            <div class="form-panel">
+              <h4 class="mb"><i class="fa fa-angle-right"></i>開催イベント</h4>
+
+              <table class="table table-striped table-advance table-hover">
+                <tbody>
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-success label-mini">募集中</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-danger label-mini">満員</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="media">
+                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
+                      </div>
+                    </td>
+                    <td><span class="label label-info label-mini">人気</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 開催イベント end -->
+
+          </div>
+          <!-- right sidebar content end -->
         </section>
       </section>
-
       <!--main content end-->
+
       <!--footer start-->
       <footer class="site-footer">
         <div class="text-center">
