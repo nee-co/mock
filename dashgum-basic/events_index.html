@@ -23,6 +23,9 @@
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
+    <!-- NEECO add CSS -->
+    <link href="assets/css/neeco.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -217,155 +220,84 @@
                     </div>
                   </div>
                   <div class="col-sm-2">
-                    <button type="submit" class="form-control btn-primary"><i class="fa fa-search"></i>検索</button>
+                    <button type="submit" class="form-control btn-primary"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </form>
+            </div>
               <!-- イベント検索Form end -->
 
               <!-- イベント検索結果 start -->
-              <table class="table table-striped table-advance table-hover">
-                <tbody>
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-01(火) 17:30 ~</div>
-                      <div>2016-11-01(火) 18:30</div>
-                    </td>
-                    <td>10人/20人</td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-02(水) 17:30 ~</div>
-                      <div>2016-11-10(水) 17:30</div>
-                    </td>
-                    <td>
-                      <div>20人/20人</div>
-                      <div><span class="label label-danger label-mini">満員</span></div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-03(木) ~</div>
-                      <div>2016-11-04(金)</div>
-                    </td>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-01(火) 17:30 ~</div>
-                      <div>2016-11-01(火) 18:30</div>
-                    </td>
-                    <td>10人/20人</td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-02(水) 17:30 ~</div>
-                      <div>2016-11-10(水) 17:30</div>
-                    </td>
-                    <td>
-                      <div>20人/20人</div>
-                      <div><span class="label label-danger label-mini">満員</span></div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>2016-11-03(木) ~</div>
-                      <div>2016-11-04(金)</div>
-                    </td>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                        <span><i class="fa fa-tag"></i>Android</span>
-                        <span><i class="fa fa-tag"></i>Java</span>
-                        <span><i class="fa fa-tag"></i>monaca</span>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <!-- Event Card -->
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                  <div class="content-panel pn">
+                    <div id="blog-bg" style="background: url(assets/img/blog-bg.jpg) no-repeat center top">
+                      <div class="blog-title">もくもく会</div>
+                    </div>
+                    <div class="blog-text">
+                      <div class="date">2016</div>
+                      <div class="date">12/28(火)</div>
+                    </div>
+                  </div>
+                </div><!-- /col-md-4-->
+                <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                  <div class="content-panel pn">
+                    <div id="blog-bg" style="background: url(assets/img/blog-bg.jpg) no-repeat center top">
+                      <div class="blog-title">IS07主催忘年会!</div>
+                    </div>
+                    <div class="blog-text">
+                      <div class="date">2016/12/28(火)</div>
+                      <div class="date">2017/01/01(土)</div>
+                    </div>
+                  </div>
+                </div><!-- /col-md-4-->
+                <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                  <div class="content-panel pn">
+                    <div id="blog-bg" style="background: url(assets/img/blog-bg.jpg) no-repeat center top">
+                      <div class="blog-title">IS07主催忘年会!</div>
+                    </div>
+                    <div class="blog-text">
+                      <div class="date">2016</div>
+                      <div class="date">12/29(水) ~ 12/30(木)</div>
+                    </div>
+                  </div>
+                </div><!-- /col-md-4-->
+                <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                  <div class="content-panel pn">
+                    <div id="blog-bg" style="background: url(assets/img/blog-bg.jpg) no-repeat center top">
+                      <div class="blog-title">IS07主催忘年会!</div>
+                    </div>
+                    <div class="blog-text">
+                      <div class="date">2016</div>
+                      <div class="date">12/29(水) ~ 12/30(木)</div>
+                    </div>
+                  </div>
+                </div><!-- /col-md-4-->
+                <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                  <div class="content-panel pn">
+                    <div id="blog-bg" style="background: url(assets/img/blog-bg.jpg) no-repeat center top">
+                      <div class="blog-title">IS07主催忘年会!</div>
+                    </div>
+                    <div class="blog-text">
+                      <div class="date">2016</div>
+                      <div class="date">12/29(水) ~ 12/30(木)</div>
+                    </div>
+                  </div>
+                </div><!-- /col-md-4-->
+              </div><!-- /row-->
+              <div class="row">
+                <ul class="pager">
+                  <li class="disabled"><a href="#">«</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">»</a></li>
+                </ul>
+              </div><!-- /row-->
               <!-- イベント検索結果 end -->
-
-            </div>
           </div>
           <!-- main content end -->
 
@@ -379,100 +311,61 @@
             <!-- 参加予定イベント start -->
             <div class="form-panel">
               <h4 class="mb"><i class="fa fa-angle-right"></i>参加予定イベント</h4>
-
-              <table class="table table-striped table-advance table-hover">
-                <tbody>
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-success label-mini">募集中</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-danger label-mini">満員</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-info label-mini">人気</span></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
             </div>
             <!-- 参加予定イベント end -->
 
             <!-- 開催イベント start -->
             <div class="form-panel">
               <h4 class="mb"><i class="fa fa-angle-right"></i>開催イベント</h4>
-
-              <table class="table table-striped table-advance table-hover">
-                <tbody>
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-danro.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-success label-mini">募集中</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-divya.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-danger label-mini">満員</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sam.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-warning label-mini">もう直ぐ開催</span></td>
-                  </tr>
-
-                  <tr>
-                    <td class="media">
-                      <a class="pull-left" href="events_show.html"><img class="media-object" src="assets/img/ui-sherman.jpg" height="64" width="64"></a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="events_show.html">タイトル</a></h4>
-                      </div>
-                    </td>
-                    <td><span class="label label-info label-mini">人気</span></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
+              <div class="post">
+                <a href="events_show.html">
+                  <img src="assets/img/blog-bg.jpg">
+                </a>
+                <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+              </div>
             </div>
             <!-- 開催イベント end -->
 
