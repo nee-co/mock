@@ -1,0 +1,24 @@
+div.blog-text .date {
+    text-align: center;
+    font-size: 18px;
+}
+
+.blog-text {
+    padding: 10px;
+}
+
+p.date {
+    text-align: right;
+}
+
+.post {
+  border-bottom: #efeded solid 1px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+div.post img {
+    height: 64px;
+    width: 64px;
+    float: left;
+}
