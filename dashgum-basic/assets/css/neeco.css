@@ -1,3 +1,15 @@
+/*共通*/
+img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+img:hover {
+    opacity: .5;
+}
+
+/*イベント一覧画面*/
 div.blog-text .date {
     text-align: center;
     font-size: 18px;
@@ -21,4 +33,13 @@ div.post img {
     height: 64px;
     width: 64px;
     float: left;
+}
+
+/*スペース一覧画面*/
+.project {
+   padding-bottom: 40px;
+}
+
+div.project .blog-title {
+   bottom: 40px;
 }
