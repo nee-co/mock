@@ -18,9 +18,12 @@ textarea {
 }
 
 .target {
-     cursor: pointer;
+    cursor: pointer;
 }
 
+.ml {
+    margin-left: 25px;
+}
 /*イベント一覧画面*/
 div.blog-text .date {
     text-align: center;
@@ -49,20 +52,30 @@ div.post img {
 
 /*スペース一覧画面*/
 .project {
-     padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 div.project .blog-title {
-     bottom: 40px;
+    bottom: 40px;
 }
 
 /*マイプロフィール画面*/
 .profile {
-     border: #c0c0c0 solid 2px;
-     letter-spacing: 2px;
-     padding: 10px;
+    border: #c0c0c0 solid 2px;
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 .inputNote {
-     width: 100%;
+    width: 100%;
+}
+
+/*ファイル一覧画面*/
+.box-child {
+    padding: 5px;
+    border-bottom: solid 1px #F7F7F7;
+}
+
+.box-child:hover {
+    background-color: #F7F7F7;
 }
