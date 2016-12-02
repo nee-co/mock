@@ -23,6 +23,9 @@
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
+    <!-- NEECO add CSS -->
+    <link href="assets/css/neeco.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -214,34 +217,12 @@
                   <div class="col-sm-9">
                     <blockquote>2016/01/01(金)</blockquote>
                     <h2>Rubyもくもく会#1</h2>
-                    <span><i class="fa fa-tag"></i>Android</span>
-                    <span><i class="fa fa-tag"></i>Java</span>
-                    <span><i class="fa fa-tag"></i>monaca</span>
                   </div>
                 </div>
-
-                <table class="table">
-                  <thead>
-                    <h3>基本情報</h3>
-                  </thead>
-                  <tbody class="h4">
-                   <tr>
-                     <th>日時:</th>
-                     <td>12時30分〜15時まで</td>
-                   </tr>
-                   <tr>
-                     <th>会場:</th>
-                     <td>研B-501</td>
-                   </tr>
-                   <tr>
-                     <th>定員:</th>
-                     <td>10名</td>
-                   </tr>
-                  </tbody>
-                </table>
               </div>
 
               <div class="form-panel">
+                <h1>時間</h1><p>15時集合</p><h1>場所</h1><p>研Bと研Aの間のラウンジ<h1>人数</h1><p>20人前後(参加者が多い場合は場所移動するかも）</p>
                 <h1>&#x000A;<a id="オススメide" class="anchor" href="#%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1ide" aria-hidden="true"></a>オススメIDE</h1>&#x000A;&#x000A;<ul>&#x000A;<li>AndroidStudio(EclipseはGoogleが終了宣言してるっぽい) </li>&#x000A;</ul>&#x000A;&#x000A;<p>設定とかは特にないけどエミュレーターはGenyMotionを使うと幸せになれる<br>&#x000A;もっと速い奴あるよ！とかBlueStacksがあるからそっち使いたい…　とかあればそっち使うともっと幸せになれるかも<br>&#x000A;(BlueStacksでデバックできるかは知らんけど…)</p>&#x000A;&#x000A;<h1>&#x000A;<a id="androidproject作成時にできるフォルダ説明" class="anchor" href="#androidproject%E4%BD%9C%E6%88%90%E6%99%82%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E8%AA%AC%E6%98%8E" aria-hidden="true"></a>AndroidProject作成時にできるフォルダ説明？</h1>&#x000A;&#x000A;<ul>&#x000A;<li>/java/&lt;パッケージ名&gt;<br>&#x000A;&#x000A;<ul>&#x000A;<li>みんな大好きjavaのソースファイルが詰まっている場所</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>/res/layout&#x000A;&#x000A;<ul>&#x000A;<li>プロジェクトのレイアウトファイルが詰まってる場所</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>/res/drawable-XXXX（多分プロジェクト生成時にはないため自分で作る可能性あり）&#x000A;&#x000A;<ul>&#x000A;<li>xhdpi 超高解像度画像（～３２０dpi）</li>&#x000A;<li>hdpi 高解像度画像（～２４０dpi）</li>&#x000A;<li>mdpi 中解像度画像（～１６０dpi）</li>&#x000A;<li>ldpi 低解像度画像（～１２０dpi）</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>/res/values&#x000A;&#x000A;<ul>&#x000A;<li>文字データやスタイル情報が詰まっている場所(主にStrings.xml重要)</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>/manifests&#x000A;&#x000A;<ul>&#x000A;<li>アプリ全体の設定ファイルが詰まっている場所</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;&#x000A;<h1>&#x000A;<a id="サンプルコードの超大まかなな説明" class="anchor" href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E8%B6%85%E5%A4%A7%E3%81%BE%E3%81%8B%E3%81%AA%E3%81%AA%E8%AA%AC%E6%98%8E" aria-hidden="true"></a>サンプルコード　...の超大まかなな説明？</h1>&#x000A;&#x000A;<p>そのまえに…　Androidのソースを見て<strong>混乱しないために理解しておく事</strong>があります。<br>&#x000A;それはAndroidアプリはイベントドリブンモデル(イベント駆動モデル)であるという事です。<br>&#x000A;そのへんを説明するために引用 </p>&#x000A;&#x000A;<blockquote>&#x000A;<p>Androidでは、さまざまなイベントが存在します。<br>&#x000A;  イベントとは「ボタンがクリックされた」、「別の画面に切り替えた」など、アプリ上で発生するできごとのことです。<br>&#x000A;  そして、このように随所で発生したイベントに応じて実行すべきコードを記述するプログラミングモデルを<br>&#x000A;  イベンドドリブンモデルと言います。<br>&#x000A;  Androidアプリでは、ユーザーの操作やアプリの状態を監視し、それぞれのタイミングで行うべきコードを書いていくのが基本です。&#x000A;  なお、イベントが発生したタイミングで実行すべきコード（メソッド）の事を"イベントハンドラー"といいます。</p>&#x000A;</blockquote>&#x000A;&#x000A;<p>これを理解しておかないと、「このメソッドどこで呼んでるの？」とか混乱する事になります。<br>&#x000A;さて、これを踏まえてコードを見ていきましょう。  </p>&#x000A;&#x000A;<p>Activity（画面）を定義するファイル</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext"><code>activity_main.xml&#x000A;&#x000A;&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"&#x000A;    xmlns:tools="http://schemas.android.com/tools" &#x000A;    android:layout_width ="match_parent"&#x000A;    android:layout_height ="match_parent"&gt;&#x000A;&#x000A;    &lt;TextView&#x000A;        android:text="Hello World!"             //Hello World　をセット&#x000A;        android:layout_width="wrap_content"     //幅を自動調節&#x000A;        android:layout_height="wrap_content"    //高さを自動調節&#x000A;        android:id="@+id/textView"/&gt;            //idはそのViewをActivity内で一意に特定できる物を&#x000A;&#x000A;&lt;/RelativeLayout&gt;&#x000A;</code></pre>&#x000A;&#x000A;<p>Activityの処理を書くクラス</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext"><code>MainActivity&#x000A;&#x000A;public class MainActivity extends Activity{&#x000A;    @Override&#x000A;    public void onCreate(Bundle saveInstanceState){   //Bundleはちゃんと開発するなら理解が必要だけど今は不要&#x000A;        super.onCreate(saveInstanceState);            //Activityクラスを継承しているので、ここでコンストラクタを呼び出し&#x000A;        setContentView(R.layout.activity_main);       //ここでレイアウトファイルと関連付け&#x000A;&#x000A;        //適当に処理を書いていくjavaのmainメソッドみたいなもん&#x000A;    }&#x000A;}&#x000A;</code></pre>&#x000A;&#x000A;<p>環境によって細部が少し変わると思うけど、だいたいこんな感じになると思う。<br>&#x000A;onCreateOptionsMenuとか色々あるだろうけど、それがイベントハンドラーで、多分今は必要ない。  </p>&#x000A;&#x000A;<p>#　使えるクラス&#x000A;と言っても私自身あまり開発経験はないので何を挙げたら良いかわからない。<br>&#x000A;最初歩の…触りだけで言えば</p>&#x000A;&#x000A;<ul>&#x000A;<li>Intentクラス</li>&#x000A;<li>ViewクラスのfindViewByIdメソッド</li>&#x000A;</ul>&#x000A;&#x000A;<p>くらいだろうか？</p>&#x000A;&#x000A;
                 </div>
 
