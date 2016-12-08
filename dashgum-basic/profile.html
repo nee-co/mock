@@ -23,6 +23,9 @@
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
+    <!-- NEECO add CSS -->
+    <link href="assets/css/neeco.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -38,11 +41,12 @@
       <!--header start-->
       <header class="header black-bg">
         <div class="sidebar-toggle-box">
-          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
         <a href="index.html" class="logo"><b>NEE-CO</b></a>
         <!--logo end-->
+
         <div class="nav notify-row" id="top_menu">
           <!--  notification start -->
           <ul class="nav top-menu">
@@ -61,11 +65,11 @@
                   <a href="index.html#">
                     <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
                     <span class="subject">
-                      <span class="from">[Rubyもくもく会#1]</span>
-                      <span class="time">ちょうど今</span>
+                    <span class="from">[Rubyもくもく会#1]</span>
+                    <span class="time">ちょうど今</span>
                     </span>
                     <span class="message">
-                      開催日が更新されました
+                        開催日が更新されました
                     </span>
                   </a>
                 </li>
@@ -73,8 +77,8 @@
                   <a href="index.html#">
                     <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
                     <span class="subject">
-                      <span class="from">ITカレッジ</span>
-                      <span class="time">5分前</span>
+                    <span class="from">ITカレッジ</span>
+                    <span class="time">5分前</span>
                     </span>
                     <span class="message">
                      本日は台風のため休講です。
@@ -111,14 +115,14 @@
             <h5 class="centered">G013C1124</h5>
 
             <li class="mt">
-              <a href="index.html">
+              <a class="active" href="index.html">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
               </a>
             </li>
 
             <li class="sub-menu">
-              <a class="active" href="javascript:;" >
+              <a href="javascript:;" >
                 <i class="fa fa-calendar"></i>
                 <span>イベント</span>
               </a>
@@ -199,76 +203,181 @@
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
-      <!-- main content start -->
+      <!--main content start-->
       <section id="main-content">
         <section class="wrapper">
-
-          <div class="col-sm-offset-2 col-sm-8">
-            <h3>プロフィール編集</h3>
-            <div class="form-panel">
-
-              <!-- イベント検索結果 start -->
-              <table class="table table-advance">
-                <tbody>
-                  <tr>
-                    <div class="col-sm-3">
-                      <span data-toggle="modal" data-target="#uploadImage">
-                        <img class="img-circle" src="assets/img/ui-sam.jpg" height="128" width="128">
-                      </span>
-                    </div>
-                    <div class="col-sm-9">
-                      <blockquote>G099C9999<label class="label label-warning">IT</label></blockquote>
-                      <h2>スティーブ・ゲイツ</h2>
-                      <textarea class="form-control" name="note" value="">パソコンは友達</textarea>
-                      <span class="pull-right">
-                        <button class="btn btn-primary">Update</button>
-                      </span>
-                    </div>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- イベント検索結果 end -->
-
-            </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 mb">
           </div>
-          <!-- main content end -->
+          <div class="col-lg-8 col-md-8 col-sm-8 mb">
+            <div class="showback mt">
+              <div class="row">
+                <div class="col-sm-offset-1 col-lg-3 col-md-3 col-sm-3 mb">
+                  <input type="file" name="upfile" id="upfile" accept="image/*" capture="camera" style="display:none" />
+                  <img class="img-circle target" src="assets/img/ui-sam.jpg" height="128" width="128" style="padding: 10px;" onClick="$('#upfile').click()">
+                </div><!--/col-**-2-->
+                <div class="col-lg-8 col-md-8 col-sm-8 mb">
+                  <blockquote><label class="label label-warning">IT</label>G099C9999</blockquote>
+                  <h1>スティーブ・ゲイツ</h1>
+                  <div class="profile">
+                  パソコンは友達ですよよよよよおおおおおおおおおおおお
+                  おおおおおおおおおおおおおおおおおおおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおおおおおお
+                  おおおおおお
+                  </div>
+                  <p class="target" data-toggle="modal" data-target="#edit-profile">edit profile</p>
+                </div><!--/col-**-8-->
+              </div><!--/row -->
+              <div class="row mt">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb">
+                  <blockquote>参加予定イベント</blockquote>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                </div><!--/col-**-6 left contents-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mb">
+                  <blockquote>開催予定イベント</blockquote>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                  <div class="post">
+                    <a href="events_show.html">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h5 class="title"><a href="events_show.html">イベントタイトル</a></h3>
+                    <p class="date"><i class="fa fa-calendar"></i>2016/11/01(火)</p>
+                  </div>
+                </div><!--/col-**-6 right contents-->
+              </div><!--/row-->
+              <div class="row mt">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb">
+                  <blockquote>所属グループ一覧</blockquote>
+                  <div class="post">
+                    <a href="#">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h4 class="title"><a href="#">グループ名</a></h4>
+                    <br><br>
+                  </div>
+                  <div class="post">
+                    <a href="#">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h4 class="title"><a href="#">グループ名</a></h4>
+                    <br><br>
+                  </div>
+                </div><!--/col-**-6 right contents-->
+                <div class="col-lg-6 col-md-6 col-sm-6 mb">
+                  <blockquote>招待されているグループ一覧</blockquote>
+                  <div class="post">
+                    <a href="#">
+                      <img src="assets/img/blog-bg.jpg">
+                    </a>
+                    <h4 class="title"><a href="#">グループ名</a></h4>
+                    <span class="target"style="padding-left: 10px;">許可/</span>
+                    <span class="target">拒否</span>
+                  </div>
+                </div><!--/col-**-6 right contents-->
+              </div><!--/row-->
+            </div><!--/showback-->
+          </div><!--/col-**-8-->
 
+          <!-- edit modal start -->
+          <div class="modal fade" id="edit-profile" tabindex="-1" role="dialog" aria-labelledby="edit-profileLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="edit-1Label">Edit your profile</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal style-form" method="post">
+                    <label>
+                      備考
+                    </label>
+                      <textarea class="form-control inputNote">現在のユーザー備考</textarea>
+                    <label class="mt">
+                      プロフィール画像
+                    </label>
+                    <input type="file" name="upfile" id="upfile" accept="image/*" />
+                    <label class="mt">
+                      パスワード
+                    </label>
+                    <br>
+                    現在のパスワード:
+                    <input type="password" name="currentPassword">
+                    <br>
+                    <br>
+                    新しいパスワード:
+                    <input type="password" name="newPassword">
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Update</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- edit modal end -->
+
+          <div class="col-lg-2 col-md-2 col-sm-2 mb">
+          </div>
         </section>
       </section>
+
       <!--main content end-->
-
-      <!-- **********************************************************************************************************************************************************
-      MODAL
-      *********************************************************************************************************************************************************** -->
-
-      <!-- upload image modal start -->
-      <div class="modal fade" id="uploadImage" tabindex="-1" role="dialog" aria-labelledby="uploadImageLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-body text-center">
-              <img class="img-circle" src="assets/img/ui-sam.jpg" height="128" width="128">
-              <input type="file">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Upload</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- upload image modal end -->
-
       <!--footer start-->
       <footer class="site-footer">
         <div class="text-center">
           Nee-co
-          <a href="events_index.html#" class="go-top">
+          <a href="index.html#" class="go-top">
             <i class="fa fa-angle-up"></i>
           </a>
         </div>
       </footer>
       <!--footer end-->
-    </section>
+  </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
