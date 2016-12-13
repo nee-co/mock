@@ -30,6 +30,19 @@ textarea {
 }
 
 /*イベント一覧画面*/
+.blog-title {
+    bottom: 0px !important;
+}
+
+.blog-date {
+    background: rgba(0,0,0,0.5);
+    padding: 6px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    display: block;
+}
+
 div.blog-text .date {
     text-align: center;
     font-size: 18px;
