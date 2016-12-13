@@ -24,6 +24,11 @@ textarea {
 .ml {
     margin-left: 25px;
 }
+
+.text {
+    word-wrap: break-word;
+}
+
 /*イベント一覧画面*/
 div.blog-text .date {
     text-align: center;
@@ -40,8 +45,8 @@ p.date {
 
 .post {
     border-bottom: #efeded solid 1px;
-    padding: 5px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 div.post img {
@@ -78,4 +83,21 @@ div.project .blog-title {
 
 .box-child:hover {
     background-color: #F7F7F7;
+}
+
+/*グループ詳細画面*/
+.userTab {
+    width: 60%;
+    margin: 15px auto;
+}
+
+.tabItem {
+    border-bottom: solid 1px #F7F7F7;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.nav-btn {
+    margin-left: 7px;
+    margin-top: 2px
 }
