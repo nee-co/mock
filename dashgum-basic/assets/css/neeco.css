@@ -98,6 +98,18 @@ div.project .blog-title {
     background-color: #F7F7F7;
 }
 
+/*グループ一覧画面*/
+.group-name {
+    background: rgba(0,0,0,0.5);
+    bottom: 40px;
+    padding: 6px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    display: block;
+    width: 120px;
+}
+
 /*グループ詳細画面*/
 .userTab {
     width: 60%;
