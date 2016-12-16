@@ -167,7 +167,7 @@
               <div class="form-panel">
                 <blockquote>グループ紹介</blockquote>
                 <div class="text">
-                  <h1>publicなグループです。</h1>
+                  <h1>publicなグループです。グループフォルダは作成済みです。</h1>
                   texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
                   texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
                   texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
@@ -184,6 +184,8 @@
                   <div class="userTab">
                     <ul class="nav nav-tabs">
                       <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">所属ユーザ</a></li>
+                      <li class><a href="#tab2" data-toggle="tab" aria-expanded="false">招待ユーザ</a></li>
+                      <span class="btn btn-dafault btn-warning nav-btn" data-toggle="modal" data-target="#addUser">招待する</span>
                     </ul>
                     <div class="tab-content">
                       <div class="tab-pane active" id="tab1">
@@ -194,6 +196,13 @@
                         <div class="tabItem">
                           <img class="target" data-toggle="modal" data-target="#user-G099A9999" width="64px" height="64px" src="assets/img/blog-bg.jpg">
                           田中太郎
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="tab2">
+                        <div class="tabItem">
+                          <img class="target" data-toggle="modal" data-target="#user-G099A9999" width="64px" height="64px" src="assets/img/blog-bg.jpg">
+                          田中太郎
+                          <span class="fa fa-times target pull-right mt" data-toggle="modal" data-target="#cancel"></span>
                         </div>
                       </div>
                     </div><!--end tab-content-->
@@ -244,6 +253,64 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="cancel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="delete-1Label">招待キャンセル</h4>
+          </div>
+          <div class="modal-body">
+            本当に招待をキャンセルしますか？
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="addDirLabel">ユーザを招待する</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal style-form" method="post">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">ユーザ名</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">追加</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal style-form" method="post">
+              <div class="col-sm-12">
+                <div class="tabItem">
+                  <img class="target" data-toggle="modal" data-target="#user-G099A9999" width="64px" height="64px" src="assets/img/blog-bg.jpg">
+                  田中太郎
+                  <span class="fa fa-times target pull-right mt"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="pull-right mt">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">招待する</button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
