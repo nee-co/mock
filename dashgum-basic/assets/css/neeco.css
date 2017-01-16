@@ -68,6 +68,10 @@ div.post img {
     float: left;
 }
 
+.post:hover {
+    background-color: #e4eef6;
+}
+
 /*スペース一覧画面*/
 .project {
     padding-bottom: 40px;
